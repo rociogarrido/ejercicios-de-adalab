@@ -1,0 +1,10 @@
+.container {
+  display: flex;
+  box-sizing: border-box;
+  height: 100px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid purple;
+  padding: 0px 20px;
+}

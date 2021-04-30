@@ -1,0 +1,14 @@
+.lista {
+  display: flex;
+  box-sizing: border-box;
+  height: 100px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.separador {
+  display: inline;
+  padding-left: 6px;
+  padding-right: 6px;
+}

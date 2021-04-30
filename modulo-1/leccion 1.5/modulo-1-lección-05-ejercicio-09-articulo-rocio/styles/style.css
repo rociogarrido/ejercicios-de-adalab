@@ -1,0 +1,36 @@
+* {
+  font-family: roboto;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  border: 8px solid black;
+}
+
+.main {
+  padding-top: 80px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.info {
+  padding-bottom: 40px;
+  font-size: 18px;
+}
+
+h2 {
+  font-size: 32px;
+  padding-bottom: 32px;
+}
+
+p {
+  padding-bottom: 27px;
+  font-size: 18px;
+}
+
+.links {
+  width: 50%;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}

@@ -1,0 +1,20 @@
+/* Versión móvil */
+@media all and (min-width: 0px) {
+  html {
+    background-color: red;
+  }
+}
+
+/* Versión tablet */
+@media all and (min-width: 480px) {
+  html {
+    background-color: yellow;
+  }
+}
+
+/* Versión desktop */
+@media all and (min-width: 768px) {
+  html {
+    background-color: green;
+  }
+}

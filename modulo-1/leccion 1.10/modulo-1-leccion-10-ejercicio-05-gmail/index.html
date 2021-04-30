@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="./styles/main.css">
+    <title>Gmail forms</title>
+</head>
+<body>
+    <div class="main_container">
+        <div class="container_half_width">
+            <div class="name">
+                <label class="label_top" for="name" name="name">Nombre</label>
+                <input type="text" placeholder="Nombre" id="name" required>
+            </div>
+            <div class="surname">
+                <label class="fakelabel" for="surname" name="surname">Nombre</label>
+                <input type="text" placeholder="Apellidos" id="surname" required>
+            </div>
+        </div>
+
+        <div class="container_full_width">
+            <div class="user_name">
+                <label class="label_top" for="user_name" name="user_name">Nombre de usuario</label>
+                <input class="full_width" type="email" placeholder="@gmail.com" id="user_name" required>
+            </div>
+        </div>
+
+        <div class="container_full_width">
+            <div class="password">
+                <label class="label_top" for="password" name="password">Contraseña</label>
+                <input class="full_width" type="password" id="password" required>
+            </div>
+        </div>
+
+        <div class="container_full_width">
+            <div class="password">
+                <label class="label_top" for="password" name="confirm_password">Confirma tu contraseña</label>
+                <input class="full_width" type="password" id="confirm_password" required>
+            </div>
+        </div>
+
+        <div class="container_birthday">
+            <p class="birthday_text">Fecha de nacimiento</p>
+            <div class="birthday">
+                <input class="birthday_one" type="number" id="birthday_day" placeholder="Día" required>
+                <select class="birthday_two" name="month" id="birthday_month" required>
+                    <option value="Default">Mes</option>
+                    <option value="Enero">Enero</option>
+                </select>
+                <input class="birthday_one" type="number" id="birthday_year" placeholder="Año" required>
+            </div>
+        </div>
+        
+        <div class="container_full_width">
+            <div class="gendre">
+                <label class="label_top" for="gendre" name="gendre">Sexo</label>
+                <select class="gendre_select" name="gendre" id="gendre">
+                    <option selected disabled value="Default">Selecciona tu género</option>
+                    <option value="Mujer">Mujer</option>
+                    <option value="Hombre">Hombre</option>
+                    <option value="Otro">Otro</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="container_full_width"> 
+            <div class="mobile">
+                <label>Teléfono móvil
+                    <input type="tel" name="phone" id="phone" pattern="^[a-z]{9-9}$" value="+34" class="full_width" >
+                </label>
+            </div>
+        </div>
+
+        <div class="container_full_width">
+            <div class="ubicacion">
+                <label class="label_top" for="ubicacion" name="ubicacion">Ubicación</label>
+                <select class="ubicacion_select" name="ubicacion" id="ubicacion">
+                    <option value="España">España</option>
+                    <option value="Italia">Italia</option>
+                    <option value="Alemania">Alemania</option>
+                    <option value="Francia">Francia</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="container_full_width">
+            <div class="email">
+                <label class="label_top" for="email" name="email">Tu dirección de correo electrónico actual</label>
+                <input class="full_width" type="email" placeholder="nombre.apellido@blabla.com" id="email" required>
+            </div>
+        </div>
+
+        <div class="send">
+            <input class="beautiful_button" type="submit" value="Siguiente paso">
+        </div>
+    </div>
+</body>
+</html>

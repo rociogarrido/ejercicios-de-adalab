@@ -1,0 +1,16 @@
+.body {
+  margin: 0;
+}
+
+.ejercicio-5 {
+  width: 100px;
+  height: 100px;
+  border: 5px saddlebrown;
+  background-color: teal;
+  padding: 10px;
+}
+
+.ejercicio-5 img {
+  height: 100px;
+  width: auto;
+}

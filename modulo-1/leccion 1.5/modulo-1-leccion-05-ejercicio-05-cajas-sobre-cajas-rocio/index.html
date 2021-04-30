@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Posicionamiento: ejercicio 5</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      
+      div {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+        }
+        .yellow {
+          height: 500px;
+          width: 500px;
+          background-color: yellow;
+          padding: 40px;
+        }
+
+        .green {
+            height: 300px;
+            width: 300px;
+            background-color: green;
+            padding: 75px;
+        }
+        
+        .blue {
+            height: 150px;
+            width: 150px;
+            background-color: blue;
+            border: solid 20px turquoise;
+        }
+      
+    </style>
+  </head>
+  <body>
+    <div class="yellow"></div>
+    <div class="green"></div>
+    <div class="blue"></div>
+  </body>
+</html>
