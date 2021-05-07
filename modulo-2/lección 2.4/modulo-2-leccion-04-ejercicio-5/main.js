@@ -1,13 +1,13 @@
 // Estamos trabajando en un proyecto bastante grande, donde hay que recoger muchos elementos de HTML desde JavaScript para interaccionar con ellos. Para no tener que escribir document.querySelector(...) tantas veces, una compañera ha sugerido hacer una función llamada getEl.
 function getEl(selector) {
     const element = document.querySelector(selector);
-    // Comprobar si la constante tiene valor alguno o no, si es truthy o falsy. 
-    // Si element existe, es truthy, return su valor
-    if (element) {
-      return element;
-    // si element es false, mandar error
+    // Comprobar si la constante tiene valor alguno o no. 
+    // Si element es null, manda error:
+    if (element === null) {
+      console.error(`El selector ${selector} no existe`);
+    // Si element existe, return su valor:
     } else {
-      console.error(`No existe ningún elemento con clase, id o tag llamado ${selector}`);
+      return element;
     }
   }
   
@@ -18,5 +18,3 @@ const pSuccessEl = getEl('.success');
 const pWarningEl = getEl('.warning');
 const btnEl = getEl('#btn');
 const gromenauer = getEl("h2");
-
-  
