@@ -3,11 +3,10 @@
 const text = document.querySelector(".container");
 
 // Cuando la posición del scroll vertical supere 250 píxeles poner un color de fondo, cuando sea inferior a 250 píxeles poner otro.
-// Pista: window.scrollY nos devuelve la posición del scroll vertical.
 
 function changeColor() {
-  let scrollHeight = window.scrollY;
-  if (scrollHeight < 250) {
+  const scrollHeight = window.scrollY; // window.scrollY nos devuelve la posición del scroll vertical.
+  if (scrollHeight > 250) {
     text.classList.add("turquoise");
     text.classList.remove("violet");
   } else {

@@ -1,0 +1,12 @@
+body {
+  font-family: Roboto, sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.image-container {
+  width: 200px;
+}

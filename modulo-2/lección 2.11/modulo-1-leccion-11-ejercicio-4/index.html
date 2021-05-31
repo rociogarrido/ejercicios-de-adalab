@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="http://beta.adalab.es/resources/stylesheets/all.css" />
+    <title>Conociendo LS</title>  
+  </head>
+
+  <style>
+    body {
+      background-color: lightseagreen;
+    }
+
+    .page {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .print-name {
+      color: white;
+      font-weight: normal;
+    }
+
+    input {
+      display: block;
+      text-align: center;
+      width: 150px;
+        height: 30px;
+        border-radius: 5px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  </style>
+
+  <body>
+    <div class="page">
+      <label for="name">Introduce un nombre:
+        <input class="name js-name" id="name" type="text" placeholder="Nombre"/>
+      </label>
+    <p>Nombre: <span class="print-name js-print-name"></span></p>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
